@@ -492,6 +492,9 @@ $if(colorlinks)$
   urlcolor={$if(urlcolor)$$urlcolor$$else$Blue$endif$},
 $else$
 $if(boxlinks)$
+  colorlinks=false,
+  urlbordercolor=$if(urlbordercolor)$$urlbordercolor$$else$green$endif$,
+  linktocpage=$if(linktocpage)$$linktocpage$$else$true$endif$,
 $else$
   hidelinks,
 $endif$
@@ -513,7 +516,7 @@ $else$
 $endif$
 \subtitle{$subtitle$}
 $endif$
-\author{$for(author)$$author$$sep$ \and $endfor$}
+\author{$author$\\{\small\textit{E-mail}:~{\tt $email$}}}
 \date{$date$}
 $if(beamer)$
 $if(institute)$

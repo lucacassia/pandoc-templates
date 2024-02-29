@@ -32,6 +32,9 @@ $if(mathjax)$
 $endif$
   $math$
 $endif$
+<nav class="navbar">
+ <a href="index.html" class="logo">Home</a> <span>/</span> $title$
+</nav>
 </head>
 <body>
 $for(include-before)$
